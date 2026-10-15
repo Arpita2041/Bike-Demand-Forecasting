@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2011-02-28 08:00:00",
+    "forecast_rentals": 182.24101054501054,
+    "lower_90": 168.0320912420912,
+    "upper_90": 196.44992984792987,
+    "horizon_hours": 1,
+    "training_data_source": "SIMULATED demonstration fixture; not a real-data benchmark"
+  }
+]

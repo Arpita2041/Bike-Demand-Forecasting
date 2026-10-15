@@ -1,0 +1,6 @@
+model,validation_mae
+random_forest,6.659294998703823
+ridge_alpha10,6.7138281491134775
+hist_gradient_boosting,6.907369919211109
+seasonal_naive_168,8.816216216216215
+seasonal_naive_24,9.097297297297297

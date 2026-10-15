@@ -1,0 +1,6 @@
+model,selected_from_validation,mae,rmse,r_squared,data_source
+seasonal_naive_24,False,10.021621621621621,12.171743973291228,0.9561784725579706,SIMULATED demonstration fixture; not a real-data benchmark
+seasonal_naive_168,False,9.897297297297298,12.013730883024213,0.9573088658701975,SIMULATED demonstration fixture; not a real-data benchmark
+ridge_alpha10,False,7.460477334413076,9.13945230826522,0.9752928736655492,SIMULATED demonstration fixture; not a real-data benchmark
+random_forest,True,7.076094204153029,8.719110625780095,0.9775132718361779,SIMULATED demonstration fixture; not a real-data benchmark
+hist_gradient_boosting,False,7.4299509072742795,9.049627543201824,0.9757761424162659,SIMULATED demonstration fixture; not a real-data benchmark

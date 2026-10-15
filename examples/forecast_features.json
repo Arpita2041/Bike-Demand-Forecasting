@@ -1,0 +1,20 @@
+{
+  "hour_sin": -0.7071067811865475,
+  "hour_cos": -0.7071067811865475,
+  "weekday_sin": 0.0,
+  "weekday_cos": 1.0,
+  "month_sin": 0.5,
+  "month_cos": -0.8660254037844386,
+  "trend_days": 520.625,
+  "lag_1": 160,
+  "lag_24": 180,
+  "lag_168": 172,
+  "mean_24": 120,
+  "std_24": 62,
+  "observations_24": 24,
+  "mean_168": 130,
+  "past_temp": 0.65,
+  "past_humidity": 0.55,
+  "past_windspeed": 0.18,
+  "past_weather": 1
+}

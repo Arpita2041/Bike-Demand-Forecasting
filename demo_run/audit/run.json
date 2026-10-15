@@ -1,0 +1,55 @@
+{
+  "mode": "quick",
+  "seed": 42,
+  "utc": "2026-10-10T06:28:11.483878+00:00",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "joblib": "1.5.3",
+    "Pillow": "12.3.0"
+  },
+  "data_sha256": "40fb3200b63adf73ccc6ad62fad21317bf3ed0b5cd20606c60dfff40b48c72bf",
+  "dataset": "SIMULATED demonstration fixture; not a real-data benchmark",
+  "data_audit": {
+    "calendar_hours": 1400,
+    "missing_observed_hours": 0,
+    "usable_forecast_rows": 1232,
+    "first_target_time": "2011-01-08 00:00:00",
+    "last_target_time": "2011-02-28 07:00:00"
+  },
+  "selected": "random_forest",
+  "selection": "minimum validation MAE",
+  "horizon": "rolling one-hour ahead",
+  "splits": {
+    "train": {
+      "rows": 739,
+      "start": "2011-01-08 00:00:00",
+      "end": "2011-02-07 18:00:00"
+    },
+    "validation": {
+      "rows": 185,
+      "start": "2011-02-07 19:00:00",
+      "end": "2011-02-15 11:00:00"
+    },
+    "calibration": {
+      "rows": 123,
+      "start": "2011-02-15 12:00:00",
+      "end": "2011-02-20 14:00:00"
+    },
+    "test": {
+      "rows": 185,
+      "start": "2011-02-20 15:00:00",
+      "end": "2011-02-28 07:00:00"
+    }
+  },
+  "excluded": [
+    "casual",
+    "registered",
+    "current-hour cnt",
+    "current-hour weather"
+  ]
+}

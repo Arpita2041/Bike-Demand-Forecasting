@@ -1,0 +1,7 @@
+{
+  "nominal_coverage": 0.9,
+  "test_empirical_coverage": 0.9081081081081082,
+  "test_mean_width": 28.417838605838625,
+  "calibration_radius": 14.208919302919313,
+  "interpretation": "Empirical interval diagnostic; temporal exchangeability is not assumed."
+}

@@ -1,0 +1,147 @@
+<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>One-hour-ahead bike demand</title><style>body{font:16px system-ui;margin:35px auto;max-width:1100px;padding:0 20px;color:#182536;background:#f7f9fc}h1,h2{color:#193b62}table{border-collapse:collapse;display:block;overflow:auto;background:white}th,td{padding:9px;border-bottom:1px solid #d8e1eb;text-align:left}img{max-width:100%;background:white}figure{margin:25px 0}p{line-height:1.6}</style><h1>One-hour-ahead bike demand</h1><p>Data: SIMULATED demonstration fixture; not a real-data benchmark. Selected model: random_forest. Calendar is known at the target hour; counts and weather come from earlier hours. Evaluation rolls forward one hour at a time as actual observations become available.</p><h2>Held-out test metrics</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>selected_from_validation</th>
+      <th>mae</th>
+      <th>rmse</th>
+      <th>r_squared</th>
+      <th>data_source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>seasonal_naive_24</td>
+      <td>False</td>
+      <td>10.0216</td>
+      <td>12.1717</td>
+      <td>0.9562</td>
+      <td>SIMULATED demonstration fixture; not a real-data benchmark</td>
+    </tr>
+    <tr>
+      <td>seasonal_naive_168</td>
+      <td>False</td>
+      <td>9.8973</td>
+      <td>12.0137</td>
+      <td>0.9573</td>
+      <td>SIMULATED demonstration fixture; not a real-data benchmark</td>
+    </tr>
+    <tr>
+      <td>ridge_alpha10</td>
+      <td>False</td>
+      <td>7.4605</td>
+      <td>9.1395</td>
+      <td>0.9753</td>
+      <td>SIMULATED demonstration fixture; not a real-data benchmark</td>
+    </tr>
+    <tr>
+      <td>random_forest</td>
+      <td>True</td>
+      <td>7.0761</td>
+      <td>8.7191</td>
+      <td>0.9775</td>
+      <td>SIMULATED demonstration fixture; not a real-data benchmark</td>
+    </tr>
+    <tr>
+      <td>hist_gradient_boosting</td>
+      <td>False</td>
+      <td>7.4300</td>
+      <td>9.0496</td>
+      <td>0.9758</td>
+      <td>SIMULATED demonstration fixture; not a real-data benchmark</td>
+    </tr>
+  </tbody>
+</table><h2>Validation selection</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>validation_mae</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>random_forest</td>
+      <td>6.6593</td>
+    </tr>
+    <tr>
+      <td>ridge_alpha10</td>
+      <td>6.7138</td>
+    </tr>
+    <tr>
+      <td>hist_gradient_boosting</td>
+      <td>6.9074</td>
+    </tr>
+    <tr>
+      <td>seasonal_naive_168</td>
+      <td>8.8162</td>
+    </tr>
+    <tr>
+      <td>seasonal_naive_24</td>
+      <td>9.0973</td>
+    </tr>
+  </tbody>
+</table><h2>Expanding-window training diagnostics</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>fold</th>
+      <th>training_rows</th>
+      <th>validation_rows</th>
+      <th>last_training_time</th>
+      <th>first_validation_time</th>
+      <th>mae</th>
+      <th>rmse</th>
+      <th>r_squared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>187</td>
+      <td>184</td>
+      <td>2011-01-15 18:00:00</td>
+      <td>2011-01-15 19:00:00</td>
+      <td>7.1137</td>
+      <td>8.8883</td>
+      <td>0.9756</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>371</td>
+      <td>184</td>
+      <td>2011-01-23 10:00:00</td>
+      <td>2011-01-23 11:00:00</td>
+      <td>6.5542</td>
+      <td>8.4482</td>
+      <td>0.9776</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>555</td>
+      <td>184</td>
+      <td>2011-01-31 02:00:00</td>
+      <td>2011-01-31 03:00:00</td>
+      <td>6.7128</td>
+      <td>8.5463</td>
+      <td>0.9777</td>
+    </tr>
+  </tbody>
+</table><h2>Interval diagnostic</h2><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>nominal_coverage</th>
+      <th>test_empirical_coverage</th>
+      <th>test_mean_width</th>
+      <th>calibration_radius</th>
+      <th>interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.9000</td>
+      <td>0.9081</td>
+      <td>28.4178</td>
+      <td>14.2089</td>
+      <td>Empirical interval diagnostic; temporal exchangeability is not assumed.</td>
+    </tr>
+  </tbody>
+</table><figure><img src="forecast.png" alt="Observed counts, forecasts, and calibrated residual intervals."><figcaption>Observed counts, forecasts, and calibrated residual intervals.</figcaption></figure></html>

@@ -1,0 +1,7 @@
+test_named_member_cache_hash_and_archive_layout (test_download.DownloadTests.test_named_member_cache_hash_and_archive_layout) ... ok
+test_complete_fixture_run_and_next_hour (test_project.ForecastTests.test_complete_fixture_run_and_next_hour) ... ok
+test_features_do_not_use_target_or_future_observations (test_project.ForecastTests.test_features_do_not_use_target_or_future_observations) ... ok
+test_lags_are_calendar_hours_and_gaps_are_not_zero (test_project.ForecastTests.test_lags_are_calendar_hours_and_gaps_are_not_zero) ... ok
+test_quantile_rank_and_chronology (test_project.ForecastTests.test_quantile_rank_and_chronology) ... ok
+Ran 5 tests in 0.634s
+OK
