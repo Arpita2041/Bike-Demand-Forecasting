@@ -82,5 +82,8 @@ datasets retain the licenses and attribution described in DATA_CARD.md.
 demo_run/ includes a completed, explicitly simulated software demonstration and its saved model. Inspect it without retraining:
 
 ~~~bash
+
+**Development date:** June 2025
+
 python main.py predict --model demo_run/models/model.joblib --history data/demo/bike_demo.csv
 ~~~
